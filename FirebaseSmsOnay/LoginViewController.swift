@@ -16,7 +16,7 @@ import MessageUI
 class LoginViewController: UIViewController {
     
 
-    
+ 
     
     
     
@@ -155,97 +155,116 @@ user.Password="aaaa"
     
  
     func login()  {
-       
-        var isLogin:String=""
-        let url="http://qrparam.net/User_Credentials/Login/?User_Email="+tf_username.text!+"&User_Password="+tf_password.text!+"&Device_ID="+deviceId
-        print(url)
-        Alamofire.request(url,method:.get).validate().responseJSON{
-            response in
-           
-            switch response.result{
-                
-                
-            case .success(let value):
-                let json=JSON(value)
-              
-                print("success")
-                 isLogin=String(json["hata"].stringValue);
-                if json.count>0{
-                    //geçiçi olarak değer atadım
-                    UserDefaults.standard.set(30268 , forKey: "isLogin")
-                   
-                   print("login sayfası")
-                    print("jsondan gelen veri  \(json)")
-                    if json["status"].stringValue=="OK"{
-                        print("print false içine girdi")
-                        let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                        let vc = storyboard.instantiateViewController(withIdentifier: "HomePage") as! HomeViewController
-                        self.performSegue(withIdentifier: "HomePageSegue", sender: self)
-                    }
-              
-                        
-                    else if json["data"].stringValue=="1"{
-                      
-                        
-                        let alert = UIAlertController(title:"Hata", message:"Kullanıcı Adı veya Şifre Yalnış. Lütfen Bilgileriniz Kontrol Ediniz",preferredStyle: .alert)
-                        let action = UIAlertAction(title: "Tamam", style: .default)
-                        alert.addAction(action)
-                        self.present(alert,animated: true,completion: nil)
-                        
-                        self.label_mistake.text="Kullanıcı adı veya şifre hatalı"
-                        self.label_mistake.isHidden=false
-                        
-                          /*  */
-                        }
-                   else if json["data"].stringValue=="2"{
-                        print("print true içine girdi")
-                        
-                        let alert = UIAlertController(title:"Bilgi", message:"Bu Kulllanıcı Adı ve Şifre Bilgileri Başka cihaz adına kayıtlıdır.",preferredStyle: .alert)
-                        let action = UIAlertAction(title: "Tamam", style: .default)
-                        alert.addAction(action)
-                        self.present(alert,animated: true,completion: nil)
-                        
-                        /*
-                        */
-                        
-                    }
-                    else if json["data"].stringValue=="3"{
-                        let alert = UIAlertController(title: "Bilgi", message: "Şifre Değiştirme İşleminiz Üzerinden Uzun Bir Süre geçti güvenliğiniz için Şifre Değiştirme Sayfasına Yönlendiriliyorsunuz..", preferredStyle: UIAlertController.Style.alert)
-                        alert.addAction(UIAlertAction(title: "Tamam", style: UIAlertAction.Style.default,  handler: {action in self.passwordvc()}))
-                        self.present(alert, animated: true, completion: nil)
-                    }
-                   
-                 
-                  
-                    else if json["data"].stringValue=="4"{
-                        let alert = UIAlertController(title:"Hata", message:"Mail Aktivasyonunuzu Gerçekleştirmeniz Gerekiyor",preferredStyle: .alert)
-                        let action = UIAlertAction(title: "Tamam", style: .default)
-                        alert.addAction(action)
-                        self.present(alert,animated: true,completion: nil)
-                        
-                    }
-                    
-                    else if json["data"].stringValue=="404"{
-                        let alert=UIAlertController(title: "Bağlantı Hatası", message: "Şuan Bağlantı Sağlanamıyor Lütfen İnternet Bağlantınızı Kontrol Ediniz", preferredStyle:UIAlertController.Style.alert)
-                        let action=UIAlertAction(title: "Tamam", style: .default, handler: nil)
-                        alert.addAction(action)
-                        self.present(alert,animated:true,completion: nil )
-                        
-                    }
-                    
-               
-          
-                }
-                
-            case .failure(let error):
-                
-                print(error)
-            }
-
-            
-     
-        }
         
+        
+        
+        
+        
+        
+        
+        
+        
+        let session = URLSession.shared
+        let url = "http://test.qrparam.net/api/Login"
+        let request = NSMutableURLRequest(url: NSURL(string: url)! as URL)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+      
+        var params :[String: Any]?
+        params = ["Email" : "barbarosistif@gmail.com", "Password":"123456","DeviceId":"aass"]
+        //params = ["Email" : tf_username.text, "Password":tf_password.text,"DeviceId":deviceId]
+        do{
+            request.httpBody = try JSONSerialization.data(withJSONObject: params, options: JSONSerialization.WritingOptions())
+            let task = session.dataTask(with: request as URLRequest as URLRequest, completionHandler: {(data, response, error) in
+                if let response = response {
+                    let nsHTTPResponse = response as! HTTPURLResponse
+                    let statusCode = nsHTTPResponse.statusCode
+                    print ("status code = \(statusCode)")
+                }
+                if let error = error {
+                    print ("\(error)")
+                }
+                if let data = data {
+                    do{
+                        
+                        if let json = try JSONSerialization.jsonObject(with: data) as? [String: String] {
+                            DispatchQueue.main.async {
+                       
+                            
+                            let userlogin = User_Login()
+                        
+                            print("data\(json["status"])")
+                            
+                             
+                            
+                            
+                           if json["status"] == "OK" {
+                                print("print false içine girdi")
+                                let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                                let vc = storyboard.instantiateViewController(withIdentifier: "HomePage") as! HomeViewController
+                                self.performSegue(withIdentifier: "HomePageSegue", sender: self)
+                           }    else if json["status"] == "ERROR"
+                           {
+                             if json["data"]=="1"{
+                                let alert = UIAlertController(title:"Hata", message:"Kullanıcı Adı veya Şifre Yalnış. Lütfen Bilgileriniz Kontrol Ediniz",preferredStyle: .alert)
+                                let action = UIAlertAction(title: "Tamam", style: .default)
+                                alert.addAction(action)
+                                self.present(alert,animated: true,completion: nil)
+                                
+                                self.label_mistake.text="Kullanıcı adı veya şifre hatalı"
+                                self.label_mistake.isHidden=false
+                                
+                            }
+                            else if json["data"]=="2"{
+                                print("print true içine girdi")
+                                
+                                let alert = UIAlertController(title:"Bilgi", message:"Bu Kulllanıcı Adı ve Şifre Bilgileri Başka cihaz adına kayıtlıdır.",preferredStyle: .alert)
+                                let action = UIAlertAction(title: "Tamam", style: .default)
+                                alert.addAction(action)
+                                self.present(alert,animated: true,completion: nil)
+                            }
+                            else if json["data"]=="3"{
+                                let alert = UIAlertController(title: "Bilgi", message: "Şifre Değiştirme İşleminiz Üzerinden Uzun Bir Süre geçti güvenliğiniz için Şifre Değiştirme Sayfasına Yönlendiriliyorsunuz..", preferredStyle: UIAlertController.Style.alert)
+                                alert.addAction(UIAlertAction(title: "Tamam", style: UIAlertAction.Style.default,  handler: {action in self.passwordvc()}))
+                                self.present(alert, animated: true, completion: nil)
+                            }
+                                
+                            else if json["data"]=="4"{
+                                let alert = UIAlertController(title:"Hata", message:"Mail Aktivasyonunuzu Gerçekleştirmeniz Gerekiyor",preferredStyle: .alert)
+                                let action = UIAlertAction(title: "Tamam", style: .default)
+                                alert.addAction(action)
+                                self.present(alert,animated: true,completion: nil)
+                                
+                            }
+                            else if json["data"]=="404"{
+                                let alert=UIAlertController(title: "Bağlantı Hatası", message: "Şuan Bağlantı Sağlanamıyor Lütfen İnternet Bağlantınızı Kontrol Ediniz", preferredStyle:UIAlertController.Style.alert)
+                                let action=UIAlertAction(title: "Tamam", style: .default, handler: nil)
+                                alert.addAction(action)
+                                self.present(alert,animated:true,completion: nil )}
+                            
+                            
+                                }
+                           else{
+                            print("bilinmeyen hata")
+                                }
+                                
+                            }
+                        
+                        
+                        
+                          
+                        }
+                        
+                    }catch _ {
+                        print ("jsondan dönen yanıtta sorun var")
+                    }
+                }
+            })
+            task.resume()
+        }catch _ {
+            print ("sorun oluştu")
+        }
+   
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        

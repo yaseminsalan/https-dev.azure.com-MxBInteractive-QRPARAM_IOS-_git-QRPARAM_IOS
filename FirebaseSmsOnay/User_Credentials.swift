@@ -21,6 +21,6 @@ class User_Credentials{
     var BirthDate:String = ""
     var Tc:Int = 0
     var DeviceId: Int=0
-    
+   
 }
 

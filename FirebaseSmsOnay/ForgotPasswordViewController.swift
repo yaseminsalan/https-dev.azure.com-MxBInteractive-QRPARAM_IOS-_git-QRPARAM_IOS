@@ -100,7 +100,7 @@ class ForgotPasswordViewController: UIViewController {
                       print("Başarılı")
                 if json["info"] == "true"
                 {
-                     UserDefaults.standard.set(user.User_Email, forKey: "usermail")
+                     UserDefaults.standard.set(user.Email, forKey: "usermail")
                  
                     let alert = UIAlertController(title: "Başarılı", message: "Adresinize Doğrulama Kodu Gönderilmiştir.", preferredStyle: UIAlertController.Style.alert)
                     alert.addAction(UIAlertAction(title: "Tamam", style: UIAlertAction.Style.default,  handler: {action in self.saveVc()}))

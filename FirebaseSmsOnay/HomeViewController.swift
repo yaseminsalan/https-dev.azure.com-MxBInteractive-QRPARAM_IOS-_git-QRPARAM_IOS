@@ -82,13 +82,13 @@ class HomeViewController: UIViewController {
         print("userıd...\(userıd)")
          print("email...\(email)")
         if userıd == nil && password==nil && email==nil && name==nil && surname==nil && telefon==nil && birtdate==nil{
-        UserDefaults.standard.set(user.User_ID, forKey: "userıd")
-        UserDefaults.standard.set(user.User_Email, forKey: "email")
-        UserDefaults.standard.set(user.User_Password, forKey: "password")
-        UserDefaults.standard.set(user.User_Phone_Number, forKey: "telefon")
-        UserDefaults.standard.set(user.User_Birth_Date, forKey: "birtdate")
-        UserDefaults.standard.set(user.User_Name, forKey: "name")
-       UserDefaults.standard.set(user.User_Surname, forKey: "surname")
+            UserDefaults.standard.set(user.UserId, forKey: "userıd")
+        UserDefaults.standard.set(user.Email, forKey: "email")
+        UserDefaults.standard.set(user.Password, forKey: "password")
+        UserDefaults.standard.set(user.PhoneNumber, forKey: "telefon")
+        UserDefaults.standard.set(user.BirthDate, forKey: "birtdate")
+        UserDefaults.standard.set(user.Name, forKey: "name")
+       UserDefaults.standard.set(user.Surname, forKey: "surname")
         }
      
        
@@ -105,7 +105,7 @@ class HomeViewController: UIViewController {
             guard let qrvc = segue.destination as? QRViewController else{return}
          //   qrvc.value=self.value2
             print("qrsegue")
-           print("homepace ıd \(self.user.User_ID)")
+           print("homepace ıd \(self.user.UserId)")
             qrvc.user1=self.user
         }
        /* else if(segue.identifier == "Siparissegue"){
