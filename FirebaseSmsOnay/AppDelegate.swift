@@ -101,6 +101,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return true
         }
         else {
+            print("deneme")
             return false
         }
     }
