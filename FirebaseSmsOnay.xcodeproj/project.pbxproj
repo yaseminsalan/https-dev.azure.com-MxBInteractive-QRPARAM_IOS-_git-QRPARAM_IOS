@@ -1,0 +1,886 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		391140B421F9A9B700575B47 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391140B321F9A9B700575B47 /* PaymentViewController.swift */; };
+		396268B721EDBD800008D8CE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396268B621EDBD800008D8CE /* SettingsViewController.swift */; };
+		396268B921EDC0CE0008D8CE /* UptadePinfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396268B821EDC0CE0008D8CE /* UptadePinfoViewController.swift */; };
+		396268BB21EDCFB70008D8CE /* PasswordChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396268BA21EDCFB70008D8CE /* PasswordChangeViewController.swift */; };
+		399937C121F739E4007B8092 /* QrOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399937C021F739E4007B8092 /* QrOrderViewController.swift */; };
+		399937C321F746DA007B8092 /* QrOrderViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399937C221F746DA007B8092 /* QrOrderViewControllerTableViewCell.swift */; };
+		39A49B0821FEFBB30065710A /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A49B0721FEFBB30065710A /* CreditCard.swift */; };
+		39EF48DB21F8A46200E154E6 /* SaveCreditCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EF48DA21F8A46200E154E6 /* SaveCreditCardController.swift */; };
+		4904EEE42316B9F60082711C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4904EEE32316B9F60082711C /* GoogleService-Info.plist */; };
+		4919ECD9231FB74A002A5142 /* OdemeqrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4919ECD8231FB74A002A5142 /* OdemeqrViewController.swift */; };
+		493EF82021F5ABD5001FD902 /* User_Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493EF81F21F5ABD5001FD902 /* User_Address.swift */; };
+		4940EBBF21F7052400536471 /* SaveAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940EBBE21F7052400536471 /* SaveAddressViewController.swift */; };
+		49484E9621D219D200019080 /* verificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49484E9521D219D200019080 /* verificationViewController.swift */; };
+		495060A22201901E000B490B /* Credit_Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495060A12201901E000B490B /* Credit_Card.swift */; };
+		495060A62201BBAD000B490B /* OrderdetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495060A52201BBAD000B490B /* OrderdetailViewController.swift */; };
+		495060A82201BC6F000B490B /* OrderdetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495060A72201BC6F000B490B /* OrderdetailTableViewCell.swift */; };
+		4954F15021CCDD7A00E539D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4954F14F21CCDD7A00E539D5 /* AppDelegate.swift */; };
+		4954F15221CCDD7A00E539D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4954F15121CCDD7A00E539D5 /* ViewController.swift */; };
+		4954F15521CCDD7A00E539D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4954F15321CCDD7A00E539D5 /* Main.storyboard */; };
+		4954F15721CCDD8D00E539D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4954F15621CCDD8D00E539D5 /* Assets.xcassets */; };
+		4954F15A21CCDD8D00E539D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4954F15821CCDD8D00E539D5 /* LaunchScreen.storyboard */; };
+		4954F16521CCDD8D00E539D5 /* FirebaseSmsOnayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4954F16421CCDD8D00E539D5 /* FirebaseSmsOnayTests.swift */; };
+		4954F17021CCDD8D00E539D5 /* FirebaseSmsOnayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4954F16F21CCDD8D00E539D5 /* FirebaseSmsOnayUITests.swift */; };
+		499D1EC821D360F5009B1B69 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499D1EC721D360F5009B1B69 /* SignUpViewController.swift */; };
+		499D1ECA21D3624D009B1B69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499D1EC921D3624D009B1B69 /* LoginViewController.swift */; };
+		499D1ECC21D3633F009B1B69 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499D1ECB21D3633F009B1B69 /* HomeViewController.swift */; };
+		499D1ECE21D363C4009B1B69 /* User_Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499D1ECD21D363C4009B1B69 /* User_Credentials.swift */; };
+		499D1ED021D363C8009B1B69 /* User_Order_Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499D1ECF21D363C8009B1B69 /* User_Order_Info.swift */; };
+		499D1ED221D363CD009B1B69 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499D1ED121D363CD009B1B69 /* QRViewController.swift */; };
+		49BFF45F220B0F36006BF0AB /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BFF45E220B0F36006BF0AB /* HelpViewController.swift */; };
+		49D16F5A2200391B00B60AF3 /* AddressListeleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D16F592200391B00B60AF3 /* AddressListeleViewController.swift */; };
+		49D16F5C22003AFE00B60AF3 /* AddressListeleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D16F5B22003AFE00B60AF3 /* AddressListeleTableViewCell.swift */; };
+		49DBA29822411B9200115208 /* KrediKartiListeleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DBA29722411B9200115208 /* KrediKartiListeleViewController.swift */; };
+		49DBA29A22411C4D00115208 /* KrediKartiListeleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DBA29922411C4D00115208 /* KrediKartiListeleTableViewCell.swift */; };
+		49E0224321D63FED00E85A85 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E0224221D63FED00E85A85 /* TableViewController.swift */; };
+		49E0224521D63FF200E85A85 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E0224421D63FF200E85A85 /* TableViewCell.swift */; };
+		49E60C922296852A00460C42 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E60C912296852A00460C42 /* ForgotPasswordViewController.swift */; };
+		49E60C942296B75000460C42 /* MailKodControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E60C932296B75000460C42 /* MailKodControlViewController.swift */; };
+		49E60C962296C91400460C42 /* SendPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E60C952296C91400460C42 /* SendPasswordViewController.swift */; };
+		49EEEA5F232143AE00EBB8F3 /* OdemelerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EEEA5E232143AE00EBB8F3 /* OdemelerTableViewController.swift */; };
+		73EDB93DB1453C5F6813E9B6 /* Pods_FirebaseSmsOnayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BDE21D2C7D34BD9D22A0C0 /* Pods_FirebaseSmsOnayTests.framework */; };
+		80D54883A01C6219B37EDDC5 /* Pods_FirebaseSmsOnay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277C1CEB110E9CDEEBD204E9 /* Pods_FirebaseSmsOnay.framework */; };
+		8AA01C6DBC3177D97875D001 /* Pods_FirebaseSmsOnayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D616FB7A7F4536188C9449D2 /* Pods_FirebaseSmsOnayUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4954F16121CCDD8D00E539D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4954F14421CCDD7900E539D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4954F14B21CCDD7900E539D5;
+			remoteInfo = FirebaseSmsOnay;
+		};
+		4954F16C21CCDD8D00E539D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4954F14421CCDD7900E539D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4954F14B21CCDD7900E539D5;
+			remoteInfo = FirebaseSmsOnay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B66C5E87A3C01684BC5C19 /* Pods-FirebaseSmsOnayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSmsOnayUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseSmsOnayUITests/Pods-FirebaseSmsOnayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		277C1CEB110E9CDEEBD204E9 /* Pods_FirebaseSmsOnay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseSmsOnay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A19F0C043C791876611AB7D /* Pods-FirebaseSmsOnayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSmsOnayUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseSmsOnayUITests/Pods-FirebaseSmsOnayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		391140B321F9A9B700575B47 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		396268B621EDBD800008D8CE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		396268B821EDC0CE0008D8CE /* UptadePinfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UptadePinfoViewController.swift; sourceTree = "<group>"; };
+		396268BA21EDCFB70008D8CE /* PasswordChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangeViewController.swift; sourceTree = "<group>"; };
+		399937C021F739E4007B8092 /* QrOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrOrderViewController.swift; sourceTree = "<group>"; };
+		399937C221F746DA007B8092 /* QrOrderViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrOrderViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		39A49B0721FEFBB30065710A /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		39EF48DA21F8A46200E154E6 /* SaveCreditCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCreditCardController.swift; sourceTree = "<group>"; };
+		4904EEE32316B9F60082711C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4919ECD8231FB74A002A5142 /* OdemeqrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdemeqrViewController.swift; sourceTree = "<group>"; };
+		493EF81F21F5ABD5001FD902 /* User_Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User_Address.swift; sourceTree = "<group>"; };
+		4940EBBE21F7052400536471 /* SaveAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAddressViewController.swift; sourceTree = "<group>"; };
+		49484E9521D219D200019080 /* verificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verificationViewController.swift; sourceTree = "<group>"; };
+		495060A12201901E000B490B /* Credit_Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credit_Card.swift; sourceTree = "<group>"; };
+		495060A52201BBAD000B490B /* OrderdetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderdetailViewController.swift; sourceTree = "<group>"; };
+		495060A72201BC6F000B490B /* OrderdetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderdetailTableViewCell.swift; sourceTree = "<group>"; };
+		4954F14C21CCDD7900E539D5 /* FirebaseSmsOnay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseSmsOnay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4954F14F21CCDD7A00E539D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4954F15121CCDD7A00E539D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4954F15421CCDD7A00E539D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4954F15621CCDD8D00E539D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4954F15921CCDD8D00E539D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4954F15B21CCDD8D00E539D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4954F16021CCDD8D00E539D5 /* FirebaseSmsOnayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseSmsOnayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4954F16421CCDD8D00E539D5 /* FirebaseSmsOnayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSmsOnayTests.swift; sourceTree = "<group>"; };
+		4954F16621CCDD8D00E539D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4954F16B21CCDD8D00E539D5 /* FirebaseSmsOnayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseSmsOnayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4954F16F21CCDD8D00E539D5 /* FirebaseSmsOnayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSmsOnayUITests.swift; sourceTree = "<group>"; };
+		4954F17121CCDD8D00E539D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4954F17F21CD016300E539D5 /* FirebaseSmsOnay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseSmsOnay.entitlements; sourceTree = "<group>"; };
+		499D1EC721D360F5009B1B69 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		499D1EC921D3624D009B1B69 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		499D1ECB21D3633F009B1B69 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		499D1ECD21D363C4009B1B69 /* User_Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User_Credentials.swift; sourceTree = "<group>"; };
+		499D1ECF21D363C8009B1B69 /* User_Order_Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User_Order_Info.swift; sourceTree = "<group>"; };
+		499D1ED121D363CD009B1B69 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		49BFF45E220B0F36006BF0AB /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		49D16F592200391B00B60AF3 /* AddressListeleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListeleViewController.swift; sourceTree = "<group>"; };
+		49D16F5B22003AFE00B60AF3 /* AddressListeleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListeleTableViewCell.swift; sourceTree = "<group>"; };
+		49DBA29722411B9200115208 /* KrediKartiListeleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrediKartiListeleViewController.swift; sourceTree = "<group>"; };
+		49DBA29922411C4D00115208 /* KrediKartiListeleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrediKartiListeleTableViewCell.swift; sourceTree = "<group>"; };
+		49E0224221D63FED00E85A85 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		49E0224421D63FF200E85A85 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		49E60C912296852A00460C42 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		49E60C932296B75000460C42 /* MailKodControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailKodControlViewController.swift; sourceTree = "<group>"; };
+		49E60C952296C91400460C42 /* SendPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPasswordViewController.swift; sourceTree = "<group>"; };
+		49EEEA5E232143AE00EBB8F3 /* OdemelerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdemelerTableViewController.swift; sourceTree = "<group>"; };
+		6687AD86CFCA8FB305356641 /* Pods-FirebaseSmsOnay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSmsOnay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseSmsOnay/Pods-FirebaseSmsOnay.debug.xcconfig"; sourceTree = "<group>"; };
+		6B0F56D15A4F2B7D6578829C /* Pods-FirebaseSmsOnayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSmsOnayTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseSmsOnayTests/Pods-FirebaseSmsOnayTests.release.xcconfig"; sourceTree = "<group>"; };
+		82E5A5626D683AF8075843B6 /* Pods-FirebaseSmsOnayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSmsOnayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseSmsOnayTests/Pods-FirebaseSmsOnayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4C6EE79B1E53440ABFE37CD /* Pods-FirebaseSmsOnay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSmsOnay.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseSmsOnay/Pods-FirebaseSmsOnay.release.xcconfig"; sourceTree = "<group>"; };
+		C2BDE21D2C7D34BD9D22A0C0 /* Pods_FirebaseSmsOnayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseSmsOnayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D616FB7A7F4536188C9449D2 /* Pods_FirebaseSmsOnayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseSmsOnayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4954F14921CCDD7900E539D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D54883A01C6219B37EDDC5 /* Pods_FirebaseSmsOnay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4954F15D21CCDD8D00E539D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73EDB93DB1453C5F6813E9B6 /* Pods_FirebaseSmsOnayTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4954F16821CCDD8D00E539D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AA01C6DBC3177D97875D001 /* Pods_FirebaseSmsOnayUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		495060A022018FEB000B490B /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				39A49B0721FEFBB30065710A /* CreditCard.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		4954F14321CCDD7900E539D5 = {
+			isa = PBXGroup;
+			children = (
+				4954F14E21CCDD7900E539D5 /* FirebaseSmsOnay */,
+				4954F16321CCDD8D00E539D5 /* FirebaseSmsOnayTests */,
+				4954F16E21CCDD8D00E539D5 /* FirebaseSmsOnayUITests */,
+				4954F14D21CCDD7900E539D5 /* Products */,
+				FFF89EEF99405AAAA865DE8B /* Pods */,
+				B199ACEF5F8E80D46EF8442C /* Frameworks */,
+				495060A022018FEB000B490B /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		4954F14D21CCDD7900E539D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4954F14C21CCDD7900E539D5 /* FirebaseSmsOnay.app */,
+				4954F16021CCDD8D00E539D5 /* FirebaseSmsOnayTests.xctest */,
+				4954F16B21CCDD8D00E539D5 /* FirebaseSmsOnayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4954F14E21CCDD7900E539D5 /* FirebaseSmsOnay */ = {
+			isa = PBXGroup;
+			children = (
+				4954F17F21CD016300E539D5 /* FirebaseSmsOnay.entitlements */,
+				4954F15321CCDD7A00E539D5 /* Main.storyboard */,
+				4954F14F21CCDD7A00E539D5 /* AppDelegate.swift */,
+				499D1ECD21D363C4009B1B69 /* User_Credentials.swift */,
+				4919ECD8231FB74A002A5142 /* OdemeqrViewController.swift */,
+				499D1EC721D360F5009B1B69 /* SignUpViewController.swift */,
+				49EEEA5E232143AE00EBB8F3 /* OdemelerTableViewController.swift */,
+				49E60C952296C91400460C42 /* SendPasswordViewController.swift */,
+				49E60C932296B75000460C42 /* MailKodControlViewController.swift */,
+				49E60C912296852A00460C42 /* ForgotPasswordViewController.swift */,
+				499D1ECF21D363C8009B1B69 /* User_Order_Info.swift */,
+				493EF81F21F5ABD5001FD902 /* User_Address.swift */,
+				4954F15121CCDD7A00E539D5 /* ViewController.swift */,
+				499D1ED121D363CD009B1B69 /* QRViewController.swift */,
+				495060A12201901E000B490B /* Credit_Card.swift */,
+				499D1ECB21D3633F009B1B69 /* HomeViewController.swift */,
+				499D1EC921D3624D009B1B69 /* LoginViewController.swift */,
+				49484E9521D219D200019080 /* verificationViewController.swift */,
+				49BFF45E220B0F36006BF0AB /* HelpViewController.swift */,
+				4940EBBE21F7052400536471 /* SaveAddressViewController.swift */,
+				495060A52201BBAD000B490B /* OrderdetailViewController.swift */,
+				495060A72201BC6F000B490B /* OrderdetailTableViewCell.swift */,
+				49E0224221D63FED00E85A85 /* TableViewController.swift */,
+				49E0224421D63FF200E85A85 /* TableViewCell.swift */,
+				396268B621EDBD800008D8CE /* SettingsViewController.swift */,
+				396268B821EDC0CE0008D8CE /* UptadePinfoViewController.swift */,
+				396268BA21EDCFB70008D8CE /* PasswordChangeViewController.swift */,
+				399937C021F739E4007B8092 /* QrOrderViewController.swift */,
+				399937C221F746DA007B8092 /* QrOrderViewControllerTableViewCell.swift */,
+				39EF48DA21F8A46200E154E6 /* SaveCreditCardController.swift */,
+				391140B321F9A9B700575B47 /* PaymentViewController.swift */,
+				49D16F592200391B00B60AF3 /* AddressListeleViewController.swift */,
+				49D16F5B22003AFE00B60AF3 /* AddressListeleTableViewCell.swift */,
+				49DBA29722411B9200115208 /* KrediKartiListeleViewController.swift */,
+				49DBA29922411C4D00115208 /* KrediKartiListeleTableViewCell.swift */,
+				4954F15621CCDD8D00E539D5 /* Assets.xcassets */,
+				4954F15821CCDD8D00E539D5 /* LaunchScreen.storyboard */,
+				4904EEE32316B9F60082711C /* GoogleService-Info.plist */,
+				4954F15B21CCDD8D00E539D5 /* Info.plist */,
+			);
+			path = FirebaseSmsOnay;
+			sourceTree = "<group>";
+		};
+		4954F16321CCDD8D00E539D5 /* FirebaseSmsOnayTests */ = {
+			isa = PBXGroup;
+			children = (
+				4954F16421CCDD8D00E539D5 /* FirebaseSmsOnayTests.swift */,
+				4954F16621CCDD8D00E539D5 /* Info.plist */,
+			);
+			path = FirebaseSmsOnayTests;
+			sourceTree = "<group>";
+		};
+		4954F16E21CCDD8D00E539D5 /* FirebaseSmsOnayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4954F16F21CCDD8D00E539D5 /* FirebaseSmsOnayUITests.swift */,
+				4954F17121CCDD8D00E539D5 /* Info.plist */,
+			);
+			path = FirebaseSmsOnayUITests;
+			sourceTree = "<group>";
+		};
+		B199ACEF5F8E80D46EF8442C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				277C1CEB110E9CDEEBD204E9 /* Pods_FirebaseSmsOnay.framework */,
+				C2BDE21D2C7D34BD9D22A0C0 /* Pods_FirebaseSmsOnayTests.framework */,
+				D616FB7A7F4536188C9449D2 /* Pods_FirebaseSmsOnayUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFF89EEF99405AAAA865DE8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6687AD86CFCA8FB305356641 /* Pods-FirebaseSmsOnay.debug.xcconfig */,
+				A4C6EE79B1E53440ABFE37CD /* Pods-FirebaseSmsOnay.release.xcconfig */,
+				82E5A5626D683AF8075843B6 /* Pods-FirebaseSmsOnayTests.debug.xcconfig */,
+				6B0F56D15A4F2B7D6578829C /* Pods-FirebaseSmsOnayTests.release.xcconfig */,
+				2A19F0C043C791876611AB7D /* Pods-FirebaseSmsOnayUITests.debug.xcconfig */,
+				02B66C5E87A3C01684BC5C19 /* Pods-FirebaseSmsOnayUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4954F14B21CCDD7900E539D5 /* FirebaseSmsOnay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4954F17421CCDD8D00E539D5 /* Build configuration list for PBXNativeTarget "FirebaseSmsOnay" */;
+			buildPhases = (
+				6CCFFEFD4BF6B0D9106787B1 /* [CP] Check Pods Manifest.lock */,
+				4954F14821CCDD7900E539D5 /* Sources */,
+				4954F14921CCDD7900E539D5 /* Frameworks */,
+				4954F14A21CCDD7900E539D5 /* Resources */,
+				F13ADD9202D848191058E542 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirebaseSmsOnay;
+			productName = FirebaseSmsOnay;
+			productReference = 4954F14C21CCDD7900E539D5 /* FirebaseSmsOnay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4954F15F21CCDD8D00E539D5 /* FirebaseSmsOnayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4954F17721CCDD8D00E539D5 /* Build configuration list for PBXNativeTarget "FirebaseSmsOnayTests" */;
+			buildPhases = (
+				3D6F7A5845CA3B5912A99F79 /* [CP] Check Pods Manifest.lock */,
+				4954F15C21CCDD8D00E539D5 /* Sources */,
+				4954F15D21CCDD8D00E539D5 /* Frameworks */,
+				4954F15E21CCDD8D00E539D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4954F16221CCDD8D00E539D5 /* PBXTargetDependency */,
+			);
+			name = FirebaseSmsOnayTests;
+			productName = FirebaseSmsOnayTests;
+			productReference = 4954F16021CCDD8D00E539D5 /* FirebaseSmsOnayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4954F16A21CCDD8D00E539D5 /* FirebaseSmsOnayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4954F17A21CCDD8D00E539D5 /* Build configuration list for PBXNativeTarget "FirebaseSmsOnayUITests" */;
+			buildPhases = (
+				A623AC9CBC78655E3ACB82BB /* [CP] Check Pods Manifest.lock */,
+				4954F16721CCDD8D00E539D5 /* Sources */,
+				4954F16821CCDD8D00E539D5 /* Frameworks */,
+				4954F16921CCDD8D00E539D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4954F16D21CCDD8D00E539D5 /* PBXTargetDependency */,
+			);
+			name = FirebaseSmsOnayUITests;
+			productName = FirebaseSmsOnayUITests;
+			productReference = 4954F16B21CCDD8D00E539D5 /* FirebaseSmsOnayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4954F14421CCDD7900E539D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = imac2;
+				TargetAttributes = {
+					4954F14B21CCDD7900E539D5 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					4954F15F21CCDD8D00E539D5 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 4954F14B21CCDD7900E539D5;
+					};
+					4954F16A21CCDD8D00E539D5 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 4954F14B21CCDD7900E539D5;
+					};
+				};
+			};
+			buildConfigurationList = 4954F14721CCDD7900E539D5 /* Build configuration list for PBXProject "FirebaseSmsOnay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4954F14321CCDD7900E539D5;
+			productRefGroup = 4954F14D21CCDD7900E539D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4954F14B21CCDD7900E539D5 /* FirebaseSmsOnay */,
+				4954F15F21CCDD8D00E539D5 /* FirebaseSmsOnayTests */,
+				4954F16A21CCDD8D00E539D5 /* FirebaseSmsOnayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4954F14A21CCDD7900E539D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4954F15A21CCDD8D00E539D5 /* LaunchScreen.storyboard in Resources */,
+				4904EEE42316B9F60082711C /* GoogleService-Info.plist in Resources */,
+				4954F15721CCDD8D00E539D5 /* Assets.xcassets in Resources */,
+				4954F15521CCDD7A00E539D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4954F15E21CCDD8D00E539D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4954F16921CCDD8D00E539D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D6F7A5845CA3B5912A99F79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebaseSmsOnayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CCFFEFD4BF6B0D9106787B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebaseSmsOnay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A623AC9CBC78655E3ACB82BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebaseSmsOnayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F13ADD9202D848191058E542 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseSmsOnay/Pods-FirebaseSmsOnay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseSmsOnay/Pods-FirebaseSmsOnay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4954F14821CCDD7900E539D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E60C942296B75000460C42 /* MailKodControlViewController.swift in Sources */,
+				49484E9621D219D200019080 /* verificationViewController.swift in Sources */,
+				495060A62201BBAD000B490B /* OrderdetailViewController.swift in Sources */,
+				499D1ECE21D363C4009B1B69 /* User_Credentials.swift in Sources */,
+				49D16F5C22003AFE00B60AF3 /* AddressListeleTableViewCell.swift in Sources */,
+				49D16F5A2200391B00B60AF3 /* AddressListeleViewController.swift in Sources */,
+				4954F15221CCDD7A00E539D5 /* ViewController.swift in Sources */,
+				39EF48DB21F8A46200E154E6 /* SaveCreditCardController.swift in Sources */,
+				49DBA29822411B9200115208 /* KrediKartiListeleViewController.swift in Sources */,
+				49E0224321D63FED00E85A85 /* TableViewController.swift in Sources */,
+				39A49B0821FEFBB30065710A /* CreditCard.swift in Sources */,
+				49DBA29A22411C4D00115208 /* KrediKartiListeleTableViewCell.swift in Sources */,
+				399937C121F739E4007B8092 /* QrOrderViewController.swift in Sources */,
+				493EF82021F5ABD5001FD902 /* User_Address.swift in Sources */,
+				49E60C962296C91400460C42 /* SendPasswordViewController.swift in Sources */,
+				4919ECD9231FB74A002A5142 /* OdemeqrViewController.swift in Sources */,
+				49EEEA5F232143AE00EBB8F3 /* OdemelerTableViewController.swift in Sources */,
+				495060A82201BC6F000B490B /* OrderdetailTableViewCell.swift in Sources */,
+				4940EBBF21F7052400536471 /* SaveAddressViewController.swift in Sources */,
+				49BFF45F220B0F36006BF0AB /* HelpViewController.swift in Sources */,
+				499D1EC821D360F5009B1B69 /* SignUpViewController.swift in Sources */,
+				396268BB21EDCFB70008D8CE /* PasswordChangeViewController.swift in Sources */,
+				495060A22201901E000B490B /* Credit_Card.swift in Sources */,
+				399937C321F746DA007B8092 /* QrOrderViewControllerTableViewCell.swift in Sources */,
+				499D1ECA21D3624D009B1B69 /* LoginViewController.swift in Sources */,
+				49E0224521D63FF200E85A85 /* TableViewCell.swift in Sources */,
+				499D1ED221D363CD009B1B69 /* QRViewController.swift in Sources */,
+				499D1ED021D363C8009B1B69 /* User_Order_Info.swift in Sources */,
+				396268B921EDC0CE0008D8CE /* UptadePinfoViewController.swift in Sources */,
+				391140B421F9A9B700575B47 /* PaymentViewController.swift in Sources */,
+				49E60C922296852A00460C42 /* ForgotPasswordViewController.swift in Sources */,
+				4954F15021CCDD7A00E539D5 /* AppDelegate.swift in Sources */,
+				499D1ECC21D3633F009B1B69 /* HomeViewController.swift in Sources */,
+				396268B721EDBD800008D8CE /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4954F15C21CCDD8D00E539D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4954F16521CCDD8D00E539D5 /* FirebaseSmsOnayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4954F16721CCDD8D00E539D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4954F17021CCDD8D00E539D5 /* FirebaseSmsOnayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4954F16221CCDD8D00E539D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4954F14B21CCDD7900E539D5 /* FirebaseSmsOnay */;
+			targetProxy = 4954F16121CCDD8D00E539D5 /* PBXContainerItemProxy */;
+		};
+		4954F16D21CCDD8D00E539D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4954F14B21CCDD7900E539D5 /* FirebaseSmsOnay */;
+			targetProxy = 4954F16C21CCDD8D00E539D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4954F15321CCDD7A00E539D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4954F15421CCDD7A00E539D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4954F15821CCDD8D00E539D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4954F15921CCDD8D00E539D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4954F17221CCDD8D00E539D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4954F17321CCDD8D00E539D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4954F17521CCDD8D00E539D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6687AD86CFCA8FB305356641 /* Pods-FirebaseSmsOnay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseSmsOnay/FirebaseSmsOnay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4G25QJY7H;
+				INFOPLIST_FILE = FirebaseSmsOnay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qrparam.FirebaseSmsOnay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4954F17621CCDD8D00E539D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4C6EE79B1E53440ABFE37CD /* Pods-FirebaseSmsOnay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseSmsOnay/FirebaseSmsOnay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4G25QJY7H;
+				INFOPLIST_FILE = FirebaseSmsOnay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qrparam.FirebaseSmsOnay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4954F17821CCDD8D00E539D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82E5A5626D683AF8075843B6 /* Pods-FirebaseSmsOnayTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4G25QJY7H;
+				INFOPLIST_FILE = FirebaseSmsOnayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.barbarosistif.FirebaseSmsOnayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirebaseSmsOnay.app/FirebaseSmsOnay";
+			};
+			name = Debug;
+		};
+		4954F17921CCDD8D00E539D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B0F56D15A4F2B7D6578829C /* Pods-FirebaseSmsOnayTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4G25QJY7H;
+				INFOPLIST_FILE = FirebaseSmsOnayTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.barbarosistif.FirebaseSmsOnayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirebaseSmsOnay.app/FirebaseSmsOnay";
+			};
+			name = Release;
+		};
+		4954F17B21CCDD8D00E539D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A19F0C043C791876611AB7D /* Pods-FirebaseSmsOnayUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4G25QJY7H;
+				INFOPLIST_FILE = FirebaseSmsOnayUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.barbarosistif.FirebaseSmsOnayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = FirebaseSmsOnay;
+			};
+			name = Debug;
+		};
+		4954F17C21CCDD8D00E539D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02B66C5E87A3C01684BC5C19 /* Pods-FirebaseSmsOnayUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4G25QJY7H;
+				INFOPLIST_FILE = FirebaseSmsOnayUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.barbarosistif.FirebaseSmsOnayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = FirebaseSmsOnay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4954F14721CCDD7900E539D5 /* Build configuration list for PBXProject "FirebaseSmsOnay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4954F17221CCDD8D00E539D5 /* Debug */,
+				4954F17321CCDD8D00E539D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4954F17421CCDD8D00E539D5 /* Build configuration list for PBXNativeTarget "FirebaseSmsOnay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4954F17521CCDD8D00E539D5 /* Debug */,
+				4954F17621CCDD8D00E539D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4954F17721CCDD8D00E539D5 /* Build configuration list for PBXNativeTarget "FirebaseSmsOnayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4954F17821CCDD8D00E539D5 /* Debug */,
+				4954F17921CCDD8D00E539D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4954F17A21CCDD8D00E539D5 /* Build configuration list for PBXNativeTarget "FirebaseSmsOnayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4954F17B21CCDD8D00E539D5 /* Debug */,
+				4954F17C21CCDD8D00E539D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4954F14421CCDD7900E539D5 /* Project object */;
+}

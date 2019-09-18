@@ -1,0 +1,6 @@
+framework module Pods_FirebaseSmsOnayUITests {
+  umbrella header "Pods-FirebaseSmsOnayUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

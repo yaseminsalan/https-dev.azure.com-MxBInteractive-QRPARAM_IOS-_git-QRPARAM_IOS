@@ -1,0 +1,6 @@
+framework module Pods_FirebaseSmsOnay {
+  umbrella header "Pods-FirebaseSmsOnay-umbrella.h"
+
+  export *
+  module * { export * }
+}
