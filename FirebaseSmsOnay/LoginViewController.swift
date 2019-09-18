@@ -174,7 +174,7 @@ user.Password="aaaa"
                     //geçiçi olarak değer atadım
                     UserDefaults.standard.set(30268 , forKey: "isLogin")
                    
-                
+                   print("login sayfası")
                     print("jsondan gelen veri  \(json)")
                     if json["status"].stringValue=="OK"{
                         print("print false içine girdi")
